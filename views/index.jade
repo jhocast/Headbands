@@ -1,0 +1,14 @@
+extends layout
+        
+block append head
+  script(type='text/javascript', src='/javascripts/landing.js')
+
+block content
+  header#banner
+    h1 Welcome to
+  section#welcome
+    div Headbands
+    span
+    a#startgame(class="btn") Create Game User
+      input#nickname(type="text", placeholder="Enter a username")
+  footer Wanna Play?

@@ -1,0 +1,43 @@
+extends layout
+
+  
+block append head 
+  script(type='text/javascript', src='/socket.io/socket.io.js') 
+  script(type='text/javascript', src='/javascripts/chat.js')
+            
+block content
+  header#banner 
+    h1 Welcome to This
+  #container.container
+    div("content"='')
+      #player1.box Player 1
+        li Points:
+        li Token:
+      #player2.box Player 2
+        li Points: 
+        li Token:
+      #player3.box Player 3
+        li Points:
+        li Token:
+      #player4.box Player 4
+        li Points:
+        li Token:
+      #player5.box Player 5
+        li Points:
+        li Token:
+      #player6.box Player 6
+        li Points:
+        li Token: 
+         
+  section#chatroom
+    input#message(type='text', placeholder='Enter your message here') 
+    input#send(type='button', value='Send')
+    div#messages 
+    div("content"='')
+
+
+
+
+
+
+
