@@ -1,7 +1,9 @@
 extends layout
         
 block append head
+  //script(type='text/javascript', src='/javascripts/jquery-1.11.0.min.js')
   script(type='text/javascript', src='/javascripts/landing.js')
+ 
 
 block content
   header#banner
@@ -9,6 +11,6 @@ block content
   section#welcome
     div Headbands
     span
-    a#startgame(class="btn") Create Game User
-      input#nickname(type="text", placeholder="Enter a username")
+    a#startgame(class="btn") Double click after
+      input#nickname(type="text", placeholder="Creating User")
   footer Wanna Play?

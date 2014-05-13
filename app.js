@@ -1,16 +1,10 @@
 
-/**
- * Module dependencies.
- */
-
 var express = require('express');
 var routes = require('./routes');
-var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 var connect = require('connect');
 var app = express();
-
 var sessionStore = new connect.session.MemoryStore();
 
 // all environments
@@ -36,10 +30,8 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/users', user.list);
-app.get('/gameroom', routes.gameroom);
 app.get('/rooms', routes.rooms);
-
+app.get('/gameroom', routes.gameroom);
 var server = http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });

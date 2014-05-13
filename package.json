@@ -1,5 +1,10 @@
 {
   "name": "application-name",
+  "authors": ["Jhonny Castrillon", "Bryan Wong", "Jennifer Petterson", "Amith Rampur"
+  		, "Dipali Lohar"],
+  "Comments": "Part of the socket IO code was retrieve from solutions in the book
+  	Socket.IO Real-time Web Application Development.  Modifications were made to the code
+  	to incorporate into the current project."
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -9,6 +14,8 @@
     "express": "3.5.1",
     "jade": "*",
     "socket.io": "0.9.13",
-    "connect": "*"
+    "connect": "*",
+    "mongodb": "*",
+    "monk": "*"
   }
 }

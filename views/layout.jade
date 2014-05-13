@@ -2,9 +2,10 @@ doctype html
 html 
 	block head
 		title=title
+		script(type='text/javascript', src='/javascripts/jquery-2.0.2.js')
 		link(rel='stylesheet', href='/stylesheets/style.css')
+		script(type='text/javascript', src='/javascripts/jquery.cookie.js')
 		//link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
-		script(type='text/javascript', src='/javascripts/jquery.min.js')
 	body
 		.main-content
 			block content

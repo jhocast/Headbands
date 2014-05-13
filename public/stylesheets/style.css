@@ -14,29 +14,33 @@ body {
 section#gameroom { 
   height: -moz-calc(50% - 80px); 
   height: -webkit-calc(50% - 80px); 
-  height: calc(100% - 80px); 
+  height: calc(50% - 80px); 
   width: calc(50% - 80px); 
   background-color: beige; 
+  float: top;
 } 
 
 div#messages { 
-  height: -moz-calc(50% - 35px); 
-  height: -webkit-calc(50% - 35px); 
-  height: calc(50% - 35px); 
+  height: -moz-calc(80% - 35px); 
+  height: -webkit-calc(80% - 35px); 
+  height: calc(80% - 35px); 
   padding: 0px; 
   -moz-box-sizing:border-box; 
   -webkit-box-sizing:border-box; 
   box-sizing:border-box; 
+  float: top;
 } 
 
 input#message { 
   width: -moz-calc(80% - 80px); 
   width: -webkit-calc(80% - 80px); 
   width: calc(80% - 80px); 
+  float: top;
 } 
 
 input#send { 
-  width: 74px; 
+  width: 100px; 
+  float: top;
 } 
 
 header{ 
@@ -53,8 +57,8 @@ header h1{
 } 
 footer{ 
   padding: 6px; 
-  background-color:grey; 
-  color: blue; 
+  background-color:blue; 
+  color: gray; 
   bottom: 0; 
   position: absolute; 
   width: 100%; 
@@ -188,27 +192,21 @@ a {
 
 
 
-
-
-
-
-
-
 .box
 {
-border:2px solid #a1a1a1;
-padding:10px 40px; 
-background:#eeeeee;
-margin-left:20px;
-margin-top:20px;
-margin-bottom:30px;
-height:80px;
-width:100px;
-float:left;
-border-radius:20px;
-text-align:center;
-text-shadow:1px 0px 0px #ffffff;
-display:inline-block;
+	border:2px solid #a1a1a1;
+	padding:0px 30px; 
+	background:beige;
+	margin-left:20px;
+	margin-top:5px;
+	margin-bottom:5px;
+	height:80px;
+	width:100px;
+	float:right;
+	border-radius:10px;
+	text-align:center;
+	text-shadow:1px 0px 0px #ffffff;
+	display:inline-block;
 }
 .box:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #d1c2d1), color-stop(1, #f9f9f9) );
@@ -221,36 +219,36 @@ display:inline-block;
 }
 .container
 {
-border:none;
-padding-left:400px;
-padding:0px 400px; 
-background: -webkit-linear-gradient(white, #dcedcf); /* For Safari 5.1 to 6.0 */
-background: -o-linear-gradient(white, #dcedcf); /* For Opera 11.1 to 12.0 */
-background: -moz-linear-gradient(white, #dcedcf); /* For Firefox 3.6 to 15 */
-background: linear-gradient(white, #dcedcf);
-height:100%;
-width:50%;
-border-radius:5px;
+	border:none;
+	padding-left:400px;
+	padding:0px 400px; 
+	background: -webkit-linear-gradient(white, #dcedcf); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(white, #dcedcf); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(white, #dcedcf); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(white, #dcedcf);
+	height:100%;
+	width:50%;
+	border-radius:5px;
 }
 .active
 {
-padding:10px 40px; 
-margin-left:20px;
-margin-top:50px;
-margin-bottom:30px;
-height:80px;
-width:100px;
-float:left;
-border-radius:20px;
-text-shadow:0px 1px 2px rgba(255,255,0,1);
-font-weight:bold;
-color:#1D2FA8;
-letter-spacing:0pt;
-word-spacing:6pt;
-font-size:18px;
-text-align:center;
-font-family:georgia, serif;
-line-height:1;
+	padding:10px 40px; 
+	margin-left:20px;
+	margin-top:50px;
+	margin-bottom:30px;
+	height:80px;
+	width:100px;
+	float:left;
+	border-radius:20px;
+	text-shadow:0px 1px 2px rgba(255,255,0,1);
+	font-weight:bold;
+	color:#1D2FA8;
+	letter-spacing:0pt;
+	word-spacing:6pt;
+	font-size:18px;
+	text-align:center;
+	font-family:georgia, serif;
+	line-height:1;
 }
 .button {
 	float:left;
@@ -302,51 +300,50 @@ line-height:1;
 /* This button was generated using CSSButtonGenerator.com */
 
 .textbox { 
-margin-left:30px;
-margin-bottom:20px;
-float:left;
-height: 25px; 
-width: 275px; 
-text-shadow: 0px 1px 0px #FFF; 
-outline: none; 
-background: -webkit-gradient(linear, left top, left bottom, from(#BCBCBE), to(#FFF)); 
-background: -moz-linear-gradient(top, #BCBCBE, #FFF); 
--webkit-border-radius: 3px; 
--moz-border-radius: 3px; 
-border-radius: 3px; 
-border: 1px solid #717171; 
--webkit-box-shadow: 1px 1px 0px #EFEFEF;
--moz-box-shadow: 1px 1px 0px #efefef;
-box-shadow: 1px 1px 0px #EFEFEF;
+	margin-left:30px;
+	margin-bottom:20px;
+	float:left;
+	height: 25px; 
+	width: 275px; 
+	text-shadow: 0px 1px 0px #FFF; 
+	outline: none; 
+	background: -webkit-gradient(linear, left top, left bottom, from(#BCBCBE), to(#FFF)); 
+	background: -moz-linear-gradient(top, #BCBCBE, #FFF); 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px; 
+	border: 1px solid #717171; 
+	-webkit-box-shadow: 1px 1px 0px #EFEFEF;
+	-moz-box-shadow: 1px 1px 0px #efefef;
+	box-shadow: 1px 1px 0px #EFEFEF;
 }
-.lable
-{
-margin-left:200px;
-color:blue;
-text-align:center;
-height: 25px; 
-width: 405px;
-background: #EEEEFF;
+.lable {
+	margin-left:200px;
+	color:blue;
+	text-align:center;
+	height: 25px; 
+	width: 405px;
+	background: #EEEEFF;
 }
-.body
-{
-padding-left:250px;
+
+.body {
+	padding-left:250px;
 }
 #progress {
 
- width: 200px;   
- border: 1px solid black;
- position: relative;
- padding: 3px;
+ 	width: 200px;   
+ 	border: 1px lightblue;
+	position: relative;
+ 	padding: 3px;
 }
 
 #percent {
- position: absolute;   
- left: 50%;
+ 	position: absolute;   
+ 	left: 50%;
 }
 
 #bar {
- height: 20px;
- background-color: green;
- width: 25%;
+ 	height: 20px;
+ 	background-color: green;
+ 	width: 25%;
 }
